@@ -3,15 +3,12 @@ $servername="localhost";
 $username="root";
 $password="root";
 $dbname="products";
-//prisijungimas prie db
-
 $db= new mysqli($servername,$username,$password,$dbname);
-//ar teisngai prisijunge
 if($db->connect_error){
-	//veiksmu nutraukimas
+	
 	die("nepavyko".$db->connect_error);
 }
-//gauti visus rezutatus
+
 
 $sql = 'SELECT * 
 		FROM product';
@@ -34,7 +31,7 @@ for ($i=0;$i < mysql_num_rows($query);$i++){
 <h2>Parduotuve</h2>
 </div>
     <div id="main">
-        <ul id="tovar">
+        <ul id="card">
         <? foreach ($goods as $item) :?>
         <li>
         <p id="name"><? $item['name'];?></p>
