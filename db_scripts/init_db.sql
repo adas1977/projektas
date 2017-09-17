@@ -6,7 +6,7 @@ price VARCHAR(30) NOT NULL
 
 INSERT INTO `products` (`id`, `title`, `price`)
 VALUES (NULL, 'Nokia 5610', '600'),
-(NULL, 'Nokia 7610', '700'),(NULL, 'Nokia 7710', '700');
+(NULL, 'Nokia 7610', '700');
 
 
 CREATE TABLE orders (
