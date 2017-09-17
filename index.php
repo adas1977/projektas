@@ -5,6 +5,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+ <div id="main">
 <form method="get" action="insert.php">
 <h4> Product name</h4>
 <input type="text" name="name" placeholder="Product name" >
@@ -21,6 +22,6 @@
 <li><a href="view.php" target= "_blank">Product list</a></li>
 </form>
 
-
+</div>
 </body>
 </html> 
